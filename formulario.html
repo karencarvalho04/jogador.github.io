@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>Cadastro</title>
+
+        <link rel="stylesheet" type="text/css" href="/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    
+    <main>
+
+        <div class="container">
+
+            <div class="box">
+
+                <h1>Crie Sua Conta</h1>
+
+
+                    <form class="formulario" action="/adicionar" method="post" enctype="multipart/form-data" id="formulario">
+
+
+                        <div class="foto">
+                            
+                         <label for="imagem">foto de perfil</label>
+
+                            <input class="input" type="file" id="imagemPath" name="imagemPath" accept="image/*" required> <br>
+
+                        </div>
+                
+
+                        <div class="field">
+
+                            <br><input class="input" type="text" id="usuario" name="usuario" required placeholder="Nome de Usuário"> <br>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <input class="input"  type="text" id="nickname" name="nickname" required placeholder="Nickname"> <br>
+
+                        </div>
+
+
+                        <div class="field">
+                            
+                            <input class="input"  type="password" id="senha" name="senha" required placeholder="Senha"> <br>
+
+                        </div>
+
+
+                        <div class="field">
+                            
+                            <input class="input"  type="password" id="senhaV" name="senhaV" required placeholder=" Confirme sua senha"> <br>
+
+                        </div>
+
+                       
+
+
+                        <div class="field">
+
+                            <input class="input"  type="text" id="cidade" name="cidade" required placeholder="Cidade"> <br>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <input class="input"  type="text" id="estado" name="estado" required placeholder="Estado"> <br>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <input class="input"  type="text" id="pais" name="pais" required placeholder="País"> <br>
+
+                        </div>
+
+                        <div class="field">
+                            
+                            <input class="input"  type="text" id="resumo" name="resumo" required placeholder="Conte um pouco sobre você!">
+                            
+                        </div>
+
+                        <script>
+                             if(senha != senhaV){
+                                console.log('As senhas não coincidem!');
+                                res.status(400).send("As senhas não coincidem!");
+                                return;
+                                }
+                        </script>
+                        
+                        <input type="submit" value="Criar Conta">
+
+                        
+
+                        
+                        <h3><a href="/">Voltar para home</a><h3></h3>
+
+                        
+          
+                    </form>  
+    
+                </div>
+
+            </div>
+
+        </main>
+            
+    </body>
+
+</html>
